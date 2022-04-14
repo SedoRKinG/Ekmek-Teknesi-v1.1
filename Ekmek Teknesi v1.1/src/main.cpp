@@ -1,10 +1,20 @@
-#include <func.h>
+
+
+#include <infrared.h>
+
 
 void setup() {
-  // put your setup code here, to run once:
-  //Deneme1
+
+Serial.begin(115200);
+delay(2000);
+Serial.println();
+
+infraredSetup();
+
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  infraredLoop();
+  delay(100);
 }
